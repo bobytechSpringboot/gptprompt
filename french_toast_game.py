@@ -1,6 +1,8 @@
 from langchain.embeddings import OpenAIEmbeddings
 
 embedding_module = OpenAIEmbeddings(openai_api_key = mykey)
+# register an account with openai and get the key
+
 def french_toast_game(word1, word2):
    if secretword == word1 or secretword == word2:
        return "It is " + secretword + "."
