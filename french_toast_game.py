@@ -17,4 +17,10 @@ def document_embedding(doc_str):
    return np.array( embedding_module.embed_documents([doc_str])[0] )
 
 def distance(vec1, vec2):
+   # smaller the number, similar they are
     return np.linalg.norm(vec1 - vec2)
+
+def similarity(vec1, vec2):
+   # bigger the number, similar they are.
+   # faster than np.linalg.norm(vec1 - vec2)
+    return np.dot(vec1, vec2)
